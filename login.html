@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+<body>
+         <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h1> Login Form</h1>
+            <hr><br>
+             <!--including form-->
+            <div class ="container">
+                <form action ="login.html" method="GET">
+                                
+                    <label> User Name: </label><br>
+                    <input type="text" class ="input" id = "name" name="name"><br><br>
+
+                    <!--creating input type for entering the text for surname-->
+                    <lable> Password: </lable><br>
+                    <input type="text" class ="input" id = "surname" name="surname">
+                    <a href="#">Forgot Password?</a>
+                    <br><br>
+            </div>
+            <!--input type for submit button-->
+            <input type="submit" value="Login"><br><br><br>
+            Not a member? <a href="#"> SingUp Now </a>
+        </form>
+    </div> 
+</div>
+
+<div class="center1">
+
+    <!--Result heading-->
+    <h1>Result Page</h1>
+
+    <!--h2 tag for showing name result-->
+    <h2> Name : <span id ="nameResult"></span></h2>
+
+    <!--h2 tag for showing surname result-->
+    <h2> Surname : <span id ="surnameResult"></span></h2>
+</div>
+
+    <script type="text/javascript" src="js/login.js"></script>
+ </body>
+
+</html>
